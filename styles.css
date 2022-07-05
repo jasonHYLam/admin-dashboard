@@ -5,6 +5,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: 2fr 7fr;
+    grid-template-rows: 2fr 7fr;
     height: 100vh;
 }
 .sidebar {
@@ -17,12 +18,34 @@
     padding-left: 50px;
 }
 
+.sidebar,
+.header {
+    padding-top: 20px;
+}
+
 .header {
     background-color: blueviolet;
     grid-column: 2 / 3;
+    display: grid;
+    padding-left: 30px;
+    row-gap: 30px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+    /* grid-template-rows: 1fr 1fr; */
     
 }
 
+.top-row {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto auto;
+    gap: 20px;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
+    gap: 20px;
+}
 .main {
     background-color: aquamarine;
     grid-column: 2 / 3;
