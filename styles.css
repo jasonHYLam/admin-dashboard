@@ -47,9 +47,36 @@
     gap: 20px;
 }
 .main {
-    background-color: aquamarine;
+    background-color: #E2E8F0;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 5fr 2fr;
-    
+    gap: 60px;
+}
+
+.left {
+    padding-left: 20px;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 15px;
+}
+
+.card-container div {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 3px 8px #a1a1a1;
+    height: 150px;
+    padding-left: 20px;
+    padding-top: 30px;
+    border-left: solid 10px #F0B429;
+}
+
+.card-text {
+    color: #666666;
+}
+.card div {
+    /* background-color:#F0B429; */
+
 }
