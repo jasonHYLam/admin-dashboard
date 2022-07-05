@@ -1,0 +1,19 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+}
+.sidebar {
+    background-color: aqua;
+    grid-column: 1 / 2;
+}
+
+.header {
+    background-color: blueviolet;
+    grid-column: 2 / 3;
+}
+
+.main {
+    background-color: aquamarine;
+    grid-column: 2 / 3;
+    
+}
