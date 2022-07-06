@@ -24,7 +24,7 @@
 }
 
 .header {
-    background-color: blueviolet;
+    background-color: white;
     grid-column: 2 / 3;
     display: grid;
     padding-left: 30px;
@@ -52,6 +52,8 @@
     display: grid;
     grid-template-columns: 5fr 2fr;
     gap: 60px;
+    padding-top: 40px;
+    padding-right: 30px;
 }
 
 .left {
@@ -63,20 +65,30 @@
     gap: 15px 15px;
 }
 
-.card-container div {
+.card-container div,
+.announcements {
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 3px 8px #a1a1a1;
-    height: 150px;
     padding-left: 20px;
     padding-top: 30px;
+}
+.card-container div {
+    height: 150px;
     border-left: solid 10px #F0B429;
 }
 
-.card-text {
+.card-text,
+hr,
+.announcement-text {
     color: #666666;
 }
-.card div {
-    /* background-color:#F0B429; */
 
+.announcement-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.announcements  {
+    padding: 30px 30px 30px 30px;
 }
