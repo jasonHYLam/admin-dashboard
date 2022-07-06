@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Mingzat', sans-serif;
+    line-height: 1;
 }
+
+
 .wrapper {
     display: grid;
     grid-template-columns: 2fr 7fr;
@@ -39,6 +43,7 @@
     display: grid;
     grid-template-columns: auto 1fr auto auto auto auto;
     gap: 20px;
+    align-items: center;
 }
 
 .bottom-row {
@@ -66,7 +71,8 @@
 }
 
 .card-container div,
-.announcements {
+.announcements,
+.trending-container {
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 3px 8px #a1a1a1;
@@ -80,7 +86,8 @@
 
 .card-text,
 hr,
-.announcement-text {
+.announcement-text,
+.user-description {
     color: #666666;
 }
 
@@ -91,4 +98,15 @@ hr,
 
 .announcements  {
     padding: 30px 30px 30px 30px;
+}
+
+.trending-users,
+.dashboard-item {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.icon-button {
+    /* background-color: transparent;
+    border: none; */
 }
