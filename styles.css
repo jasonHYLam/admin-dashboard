@@ -37,7 +37,7 @@
     display: grid;
     padding-left: 30px;
     row-gap: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-right: 60px;
     /* grid-template-rows: 1fr 1fr; */
     
@@ -65,9 +65,14 @@
     background-color: #1992D4;
     color: white;
     border: none;
-    border-radius: 15px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    border-radius: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.bottom-row {
+
+    align-items: center;
 }
 
 .main {
@@ -100,7 +105,7 @@
     padding-top: 30px;
 }
 .card-container > div {
-    height: 150px;
+    height: 170px;
     border-left: solid 10px #F0B429;
 }
 
@@ -183,6 +188,16 @@ hr {
     padding-bottom: 15px;
 }
 
+.trending-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+.trending-users {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
 
 .trending-container {
     /* display: grid; */
@@ -212,10 +227,13 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    border: solid 1px red;
     right: 0;
     bottom: 0;
     padding-bottom: 10px;
+}
+
+.card > p {
+    padding-right: 25px;
 }
 
 
@@ -229,4 +247,13 @@ hr {
 
 .share-button {
     background-image: url(source-branch.svg);
+}
+
+.top-row img,
+.trending-users img {
+    height: 50px;
+}
+
+.bottom-row img {
+    height: 70px;
 }
