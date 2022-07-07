@@ -17,7 +17,8 @@
 
         <div class="sidebar">
             <div class="dashboard">
-              <p>Dashboard</p>  
+                <span class="material-symbols-outlined dashboard-icon">grid_view</span>
+                <p>Dashboard</p>  
             </div>
             <div class="dashboard-item">
                 <i class="fa-solid fa-house"></i>
@@ -65,11 +66,11 @@
                 <button class="icon-button" type="submit">
                 <span class="material-symbols-outlined">search</span>
                 </button>
-                <input type="text">
-                <div>empty</div>
-                <button class="icon-button"><i class="fa-regular fa-bell"></i></button>
+                <input class="search-bar" type="text">
+                <div class="empty"> </div>
+                <button class="icon-button"><i class="fa-regular fa-bell bell-icon"></i></button>
                 <img src="" alt="user-icon">
-                <p>Morgan Oakley</p>
+                <p class="user-name">Morgan Oakley</p>
 
             </div>
 
@@ -77,9 +78,9 @@
                 <img src="" alt="user-icon">
                 <div>
                     <p>Hi there,</p>
-                    <p>Morgan Oakley (@morgan)</p>
+                    <p class="user-name">Morgan Oakley (@morgan)</p>
                 </div>
-                <div>empty</div>
+                <div class="empty"> </div>
                 <button>New</button>
                 <button>Upload</button>
                 <button>Share</button>
@@ -96,27 +97,57 @@
                     <div class="card">
                         <p class="card-title">Super Cool Project</p>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam aut in aliquam doloribus itaque tempora?</p>
+                        <div class="card-buttons">
+                            <div class="favourite-button"></div>
+                            <div class="eye-button"></div>
+                            <div class="share-button"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <!-- <div class="side-colour">um</div> -->
                         <p class="card-title">Less Cool Project</p>
                         <p class="card-text">Numquam esse magnam perspiciatis nihil, sint, minima laboriosam provident, pariatur similique ipsum fugit cupiditate culpa optio?</p>
+                        <div class="card-buttons">
+                            <div class="favourite-button"></div>
+                            <div class="eye-button"></div>
+                            <div class="share-button"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <p class="card-title">Impossible App</p>
                         <p class="card-text">Illo, voluptatibus deleniti adipisci neque quas culpa suscipit temporibus commodi error vitae magnam corporis et ullam.</p>
+                        <div class="card-buttons">
+                            <div class="favourite-button"></div>
+                            <div class="eye-button"></div>
+                            <div class="share-button"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <p class="card-title">Easy Peasy App</p>
                         <p class="card-text">Blanditiis, dolores. Esse sequi, eos omnis magnam quas reprehenderit veniam. Maxime maiores fuga ea modi labore.</p>
+                        <div class="card-buttons">
+                            <div class="favourite-button"></div>
+                            <div class="eye-button"></div>
+                            <div class="share-button"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <p class="card-title">Ad Blocker</p>
                         <p class="card-text">Fuga id eos totam, ut dignissimos repellat! Possimus eaque, sit ab excepturi asperiores magnam totam libero.</p>
+                        <div class="card-buttons">
+                            <div class="favourite-button"></div>
+                            <div class="eye-button"></div>
+                            <div class="share-button"></div>
+                        </div>
                     </div>
                     <div class="card">
                         <p class="card-title">Money Maker</p>
                         <p class="card-text">Magni, consectetur sequi neque quaerat culpa rerum doloribus voluptas tempore numquam? Laborum cum incidunt fuga enim.</p>
+                        <div class="card-buttons">
+                            <div class="favourite-button"></div>
+                            <div class="eye-button"></div>
+                            <div class="share-button"></div>
+                        </div>
                     </div>
 
                 </div>
@@ -125,58 +156,65 @@
             </div>
 
             <div class="right">
-                <p>Announcements</p>
-                <div class="announcements">
-                    <div class="announcement-container">
-                        <p class="announcement-title">Site Maintenance</p>
-                        <p class="announcement-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est natus ea neque velit reprehenderit voluptas animi!</p>
-                    </div>
-                    <hr>
-                    <div class="announcement-container">
-                        <p class="announcement-title">Community Share Day</p>
-                        <p class="announcement-text">Sunt aperiam nemo placeat ipsa corrupti enim et! Aliquam ut doloribus dignissimos natus minus ex nihil!</p>
-                    </div>
-                    <hr>
-                    <div class="announcement-container">
-                        <p class="announcement-title">Updated Privacy Policy</p>
-                        <p class="announcement-text">Veniam qui quo voluptate pariatur dicta quos? Voluptatibus ipsam in quia deserunt cupiditate ipsum consequuntur repudiandae?</p>
+                <div class="announcements-container">
+                    <p class="announcements-title">Announcements</p>
+                    <div class="announcements-card">
+                        <div class="announcement-container">
+                            <p class="announcement-title">Site Maintenance</p>
+                            <p class="announcement-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est natus ea neque velit reprehenderit voluptas animi!</p>
+                        </div>
+                        <hr>
+                        <div class="announcement-container">
+                            <p class="announcement-title">Community Share Day</p>
+                            <p class="announcement-text">Sunt aperiam nemo placeat ipsa corrupti enim et! Aliquam ut doloribus dignissimos natus minus ex nihil!</p>
+                        </div>
+                        <hr>
+                        <div class="announcement-container">
+                            <p class="announcement-title">Updated Privacy Policy</p>
+                            <p class="announcement-text">Veniam qui quo voluptate pariatur dicta quos? Voluptatibus ipsam in quia deserunt cupiditate ipsum consequuntur repudiandae?</p>
+                        </div>
                     </div>
                 </div>
 
-                <p>Trending</p>
+
                 <div class="trending-container">
-                    <div class="trending-users">
-                        <img src="" alt="user-icon">
-                        <div class="trending-user">
-                            <p>@tegan</p>
-                            <p class="user-description">World Peace Builder</p>
+                    <p>Trending</p>
+                    <div class="trending-card">
+                        <div class="trending-users">
+                            <img src="" alt="user-icon">
+                            <div class="trending-user">
+                                <p>@tegan</p>
+                                <p class="user-description">World Peace Builder</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="trending-users">
-                        <img src="" alt="user-icon">
-                        <div class="trending-user">
-                            <p>@morgan</p>
-                            <p class="user-description">Super Cool Project</p>
+                        <div class="trending-users">
+                            <img src="" alt="user-icon">
+                            <div class="trending-user">
+                                <p>@morgan</p>
+                                <p class="user-description">Super Cool Project</p>
+                            </div>
                         </div>
-                    </div>
                 
-                    <div class="trending-users">
-                        <img src="" alt="user-icon">
-                        <div class="trending-user">
-                            <p>@kendall</p>
-                            <p class="user-description">Life Changing App</p>
+                        <div class="trending-users">
+                            <img src="" alt="user-icon">
+                            <div class="trending-user">
+                                <p>@kendall</p>
+                                <p class="user-description">Life Changing App</p>
+                            </div>
+                        </div>
+
+                        <div class="trending-users">
+                            <img src="" alt="user-icon">
+                            <div class="trending-user">
+                                <p>@alex</p>
+                                <p class="user-description">No Traffic Maker</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="trending-users">
-                        <img src="" alt="user-icon">
-                        <div class="trending-user">
-                            <p>@alex</p>
-                            <p class="user-description">No Traffic Maker</p>
-                        </div>
-                    </div>
                 </div>
+                
 
             </div>
         </div>

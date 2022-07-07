@@ -5,6 +5,10 @@
     line-height: 1;
 }
 
+:root {
+    --icon-size: 20px;
+}
+
 
 .wrapper {
     display: grid;
@@ -41,24 +45,40 @@
 
 .top-row {
     display: grid;
-    grid-template-columns: auto 1fr auto auto auto auto;
+    grid-template-columns: auto 1fr 30px auto auto auto;
     gap: 20px;
     align-items: center;
 }
 
+.search-bar {
+    background-color: #E2E8F0;
+    border: none;
+    border-radius: 15px;
+}
 .bottom-row {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 1fr 1fr 1fr;
     gap: 20px;
 }
+
+.bottom-row button {
+    background-color: #1992D4;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
 .main {
     background-color: #E2E8F0;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 5fr 2fr;
-    gap: 60px;
+    gap: 20px;
     padding-top: 40px;
     padding-right: 30px;
+    padding-bottom: 50px;
 }
 
 .left {
@@ -67,28 +87,31 @@
 .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px 15px;
+    gap: 25px 25px;
 }
 
-.card-container div,
-.announcements,
-.trending-container {
+.card-container > div,
+.announcements-card,
+.trending-card {
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 3px 8px #a1a1a1;
     padding-left: 20px;
     padding-top: 30px;
 }
-.card-container div {
+.card-container > div {
     height: 150px;
     border-left: solid 10px #F0B429;
 }
 
 .card-text,
-hr,
 .announcement-text,
 .user-description {
     color: #666666;
+}
+
+hr {
+    border: solid 1px #dbdbdb;
 }
 
 .announcement-container {
@@ -96,17 +119,114 @@ hr,
     padding-bottom: 10px;
 }
 
-.announcements  {
+.announcements-container  {
+    justify-self: start;
+}
+
+.announcements-card {
     padding: 30px 30px 30px 30px;
 }
 
 .trending-users,
+.dashboard,
 .dashboard-item {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
 
 .icon-button {
-    /* background-color: transparent;
-    border: none; */
+    background-color: transparent;
+    border: none;
+}
+
+.bell-icon {
+    font-size: var(--icon-size);
+}
+
+.dashboard,
+.card-title,
+.announcement-title,
+.dashboard-item p,
+.bottom-row button,
+.bottom-row p,
+.user-name,
+.left > p,
+.announcements-container > p,
+.trending-container > p {
+    font-weight: 800;
+}
+
+.right {
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    /* justify-items: end; */
+}
+
+.dashboard {
+    font-size: 20px;
+}
+
+.bottom-row > div > .user-name {
+    font-size: 18px;
+}
+
+.bottom-row div p:first-child,
+.announcement-title,
+.announcement-text {
+    font-size: 12px;
+}
+
+.left > p,
+.announcements-container> p,
+.trending-card,
+.trending-container >p {
+    padding-bottom: 15px;
+}
+
+
+.trending-container {
+    /* display: grid; */
+    justify-items: end;
+    align-self: end;
+}
+
+.trending-card p {
+    font-size: 12px;
+}
+
+.favourite-button,
+.eye-button,
+.share-button {
+    background-repeat: no-repeat;
+    height: 16px;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+}
+.card-buttons {
+    position: absolute;
+    height: 15%;
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border: solid 1px red;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+
+.favourite-button {
+    background-image: url(star-plus-outline.svg);
+}
+
+.eye-button {
+    background-image: url(eye-plus-outline.svg);
+}
+
+.share-button {
+    background-image: url(source-branch.svg);
 }
